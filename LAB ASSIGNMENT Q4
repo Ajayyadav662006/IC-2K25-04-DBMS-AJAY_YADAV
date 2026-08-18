@@ -1,0 +1,16 @@
+mysql> use ajaydbms;
+Database changed
+mysql> create table if not exists dup_countries as select * from countries;
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+mysql> desc dup_countries;
++--------------+---------------+------+-----+---------+-------+
+| Field        | Type          | Null | Key | Default | Extra |
++--------------+---------------+------+-----+---------+-------+
+| country_id   | varchar(2)    | NO   | PRI | NULL    |       |
+| country_name | varchar(40)   | YES  |     | NULL    |       |
+| region_id    | decimal(10,0) | YES  |     | NULL    |       |
++--------------+---------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql>
