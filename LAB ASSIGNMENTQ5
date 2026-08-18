@@ -20,3 +20,4 @@ mysql> desc countries;
 | region_id    | decimal(10,0) | YES  |     | NULL    |       |
 +--------------+---------------+------+-----+---------+-------+
 3 rows in set (0.02 sec)
+mysql>
